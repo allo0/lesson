@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -152,6 +153,16 @@ public class Main {
         int o = 7;
         myVoidFunction(k, o);
         myVoidFunction(o);
+
+        Scanner myObj = new Scanner(System.in);
+        System.out.print("Enter a name: ");
+        String name = myObj.nextLine(); // "Sample Text Input"
+        System.out.println();
+        System.out.print("Enter a number: ");
+        int number = myObj.nextInt();
+        System.out.println();
+        System.out.println(name);
+        System.out.println(number);
     }
 
     public static String myFunction() {
